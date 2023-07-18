@@ -1,0 +1,228 @@
+body {
+   
+    background-color: #f5f5dc;
+    color:#6b463f;
+  
+}
+
+.header::before {
+    background: url("https://media.istockphoto.com/id/1384861062/photo/woman-taking-photo-of-spring-fashion-accessories-with-smartphone-influencer-and-social-media.jpg?s=612x612&w=0&k=20&c=FzCYnLsQlFBuDPII4sIzxy3rLQaqBdpnU3TNBuQP9So=") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.7;
+    margin-top: 0%;
+    padding-top: 0%;
+    animation: pic 20s ease-in-out 2s infinite forwards;
+}
+
+@keyframes pic {
+    
+    0% {
+        background-image: url("https://media.istockphoto.com/id/675267810/photo/young-beautiful-girl-is-looking-shoes-in-the-mall.jpg?s=612x612&w=0&k=20&c=2bDH5IRMzTTegBW-6LQghaB7wXPLlk_gdBskojm_y8s=");
+    }
+
+    25% {
+        background-image: url("https://media.istockphoto.com/id/1129341836/photo/cropped-close-up-image-view-photo-of-nice-attractive-feminine-fit-thin-slim-shaven-legs.jpg?s=612x612&w=0&k=20&c=zdc1_1974M8vwtfr9Y_yaCNPBnaEm8MUstu8qFakWf4=");
+    }
+
+    50% {
+        background-image: url("https://media.istockphoto.com/id/1356765991/photo/sports-multi-colored-high-boots-on-female-legs-in-black-jeans-on-the-background-of-the-city.jpg?b=1&s=170667a&w=0&k=20&c=734Qi-S_xHvG-lFJsA1GW1v85rjK3SWMvEnysJqI6-Q=");
+    }
+
+    75% {
+        background-image: url("https://media.istockphoto.com/id/1337214807/photo/collage-with-female-and-male-legs-in-colored-sneakers-trainers-isolated-over-bright.jpg?b=1&s=170667a&w=0&k=20&c=sucmCIl49tAr54Fz1BEg_P49Hzj2qmWfFGWq71YDAS8=");
+    }
+
+    85% {
+        background-image: url("https://media.istockphoto.com/id/1295853778/photo/happy-blonde-model-girl-with-a-shiny-smile-in-beige-blouse-and-fashionable-pink-sunglasses.jpg?s=612x612&w=0&k=20&c=ZVJ4A-sXUIwvGPP4ovj-nBWvCVkp7esag5cEGaKY-go=");
+    }
+
+    100% {
+        background-image: url("https://media.istockphoto.com/id/1348707285/photo/stylish-woman-tying-shoelace-of-black-ankle-boot.jpg?b=1&s=170667a&w=0&k=20&c=9Oh1nj2D3Be1Bczkoi7Eb_RWpcJPGKKhSIRTXg097hk=");
+    }
+    
+}
+
+.header ol {
+    list-style: none;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(5, 150px);
+    
+}
+
+.subheader1 {
+    font-family: 'Montserrat', sans-serif;
+ 
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+ 
+     color: #9c6652;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2); 
+
+}
+
+.subheader1:hover {
+    cursor: pointer;
+   
+    color: #613b32;
+}
+
+.subheaders {
+    margin-top: 15px;
+    margin-left: 25%;
+}
+
+#logo {
+    font-family: 'Tilt Prism', cursive;
+    font-weight: bold;
+
+}
+
+.button {
+    position: relative;
+    
+    background-color: #f5f5dc;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    height: 60px;
+    border-radius: 4px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 120%;
+    font-weight: bold;
+}
+
+.button span {
+    position: relative;
+}
+
+.button::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #9c6652, transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+.button:hover::before {
+    --size: 200px;
+}
+
+.btn {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    margin-top: 13%;
+    height: 240px;
+}
+
+
+
+
+.shoes-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.men {
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 35px;
+}
+
+.men img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    
+    display: grid;
+    justify-content: center;
+    background-color:#f5deb3;
+    text-align: center;
+   
+    color: #6b463f;
+    padding: 10px;
+    font-family: 'Merriweather', serif;
+}
+.l-shoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.ladies {
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding-bottom: 35px;
+}
+
+.ladies img {
+    width: 100%;
+    height: 100%;
+}
+
+img:hover {
+    opacity: 0.4;
+}
+footer{
+    display: grid;
+    grid-template-columns:50px 50px 50px 50px;
+    grid-gap: 2px;
+    justify-content: center;
+    
+}
+.form{
+  
+    color: #333333;
+  
+}
+footer input{
+    width: 700%;
+    padding: 10%;
+    margin: 10%;
+    border-radius: 4px;
+}
+footer textarea{
+    width: 800%;
+
+}
+
+.comments::before{
+    background: url("https://media.istockphoto.com/id/1371081916/photo/content-wording-on-wooden-cubes-with-speech-bubbles.jpg?b=1&s=170667a&w=0&k=20&c=_QWN8OOQbyV2vLi6p1wceOhhRgDvZyhHaEav0CGFw1M=")no-repeat center center/cover;
+    content: '';
+    width: 99%;
+    height:  60%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+}
+#commentheading{
+    /* margin-bottom: 20px; */
+}
+.footer{
+    grid-template-rows: 1;
+    color: #6b463f;
+    display:grid;
+    justify-content: center;
+    border:2px solid  #9c6652;
+    padding: 10px 10px;
+   margin-top: 15px;
+}
+
