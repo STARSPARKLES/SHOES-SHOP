@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>SIGN-UP/LOG-IN</title>
+    <style>
+        body {
+            background: url("https://images.unsplash.com/photo-1514920956084-485118b3e41f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fFNIT0VTJTIwcGljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60") no-repeat center center/cover;
+            
+            background-repeat: none;
+            background-size: cover;
+            color:white;
+        }
+
+        h3 {
+            width: 40%;
+            margin-top: 70px;
+            margin-left: 100px;
+            text-align: center;
+        }
+
+        .section form {
+            display: grid;
+            width: 20px;
+            border-radius: 5px;
+            margin-left: 16%;
+        }
+
+        .section input {
+            padding: 5px 60px;
+            border-radius: 8px;
+            margin: 4px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #NEXT {
+            background-image: linear-gradient(to bottom, #1E90FF, #9370DB);
+            transition: background-image 0.5s ease-in-out;
+            width:173%;
+        }
+
+        #NEXT:hover {
+            cursor: pointer;
+            background-image: linear-gradient(to bottom, #9370DB, #FFC0CB);
+        }
+        footer{
+            color: black;
+            display: grid;
+            grid-template-columns: repeat(2,1000px);
+        }
+        p{
+            color:rgb(150, 62, 150) ;
+        }
+        #logo {
+            font-family: 'Tilt Prism', cursive;
+            font-weight: bold;
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headers">
+        <div>
+            <picture id="logo">
+                AHMAD-SNEAKERS&#x2730;
+            </picture>
+        </div>
+    
+        <section class="section">
+            <h3>SIGN-UP/LOG-IN</h3>
+            <form action="./shoesweb.html">
+                <label for="name"></label>
+                <input type="text" name="my name" id="name" placeholder="ENTER USER-NAME">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="ENTER YOUR PASSWORD">
+                <label for="NEXT"></label>
+
+
+               <input type="submit" value="NEXT" id="NEXT">
+
+
+            </form>
+        </section>
+
+    </div>
+</body>
+
+</html>
