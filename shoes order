@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>SHOES-ORDER</title>
+    <style>
+        body{
+             background: url("https://images.unsplash.com/photo-1512374382149-233c42b6a83b?ixlib=rb-4.0.") no-repeat center center/cover;
+             
+
+            
+        }
+        h2 {
+            width: 40%;
+            margin-top: 70px;
+            margin-left: 100px;
+            text-align: center;
+            font-family: 'Franklin Gothic Heavy', sans-serif;
+            color:black;
+            font-weight: bold;
+            font-size: 33px;
+           
+        }
+
+        .section form {
+            display: grid;
+            width: 20px;
+            border-radius: 5px;
+            margin-left: 16%;
+        }
+
+        .section input {
+            padding: 5px 60px;
+            border-radius: 8px;
+            margin: 4px;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        #SUBMIT {
+            background-image: linear-gradient(to bottom, #1E90FF, #9370DB);
+            transition: background-image 0.5s ease-in-out;
+            width: 169%;
+
+        }
+
+        #SUBMIT:hover {
+            cursor: pointer;
+            background-image: linear-gradient(to bottom, #9370DB, #FFC0CB);
+
+        }
+
+
+        footer {
+            color: black;
+            display: grid;
+            grid-template-columns: repeat(2, 1000px);
+        }
+
+        p {
+            color: rgb(150, 62, 150);
+        }
+
+        #logo {
+            font-family: 'Tilt Prism', cursive;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headers">
+        <div>
+            <picture id="logo">
+
+                AHMAD-SNEAKERS&#x2730;
+
+            </picture>
+        </div>
+
+        <section class="section">
+            <h2>ORDER-NOW!!!</h2>
+            <form id="myForm">
+                <label for="name"></label>
+                <input type="text" name="my name" id="name" placeholder="ENTER USER-NAME">
+                <label for="phone number"></label>
+                <input type="number" name="my phone number" id="phone number" placeholder="ENTER YOUR PHONE NO">
+                <label for="email id"></label>
+                <input type="email" name="my email id" id="email id" placeholder="ENTER YOUR EMAIL ID">
+                <label for="gender"></label>
+                <input type="text" name="gender" id="gender" placeholder="ENTER YOUR GENDER">
+                <label for="default"></label>
+                <input type="number" name="default" value="9000" id="default" placeholder='PRODUCT-PRICE'>
+                
+                <label for="card-type"></label>
+                <input placeholder="CREDIT/DEBIT" type="number" id="card-type" name="card-type" >
+              
+                <label for="cvc"></label>
+                <input placeholder="ENTER YOUR CVC" type="number" id="cvc" name="cvc">
+                    
+               
+                <label for="SUBMIT"></label>
+                <input type="submit" value="ORDER" id="SUBMIT" onclick="return checkNumber()">
+                <script>
+
+                    const myForm = document.getElementById("myForm");
+
+                    myForm.addEventListener("submit", function (event) {
+
+                        event.preventDefault();
+
+
+                        alert("Successfully shopped! Your order will be delivered in 3 days.");
+                    });
+                </script>
+            </form>
+        </section>
+
+    </div>
+</body>
+
+</html>
